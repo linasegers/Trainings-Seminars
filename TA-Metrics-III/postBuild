@@ -1,2 +1,3 @@
 #!/bin/bash
-Rscript install.R
+echo "Installing R and IRKernel..."
+R -e "install.packages('IRkernel'); IRkernel::installspec(user = TRUE)"
