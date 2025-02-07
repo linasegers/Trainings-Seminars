@@ -1,4 +1,5 @@
-install.packages("remotes")  # Ensures we can install from GitHub
-install.packages("IRkernel", repos="http://cran.us.r-project.org")
+options(repos = c(CRAN = "https://cloud.r-project.org"))
+install.packages("remotes")  
+install.packages("IRkernel")
 IRkernel::installspec(user = TRUE)
 install.packages(c("ggplot2", "dplyr", "tidyverse"))  # Add other required packages
